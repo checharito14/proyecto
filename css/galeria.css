@@ -1,0 +1,13 @@
+body{
+    background-color: #eaeaea;
+    background-size: cover;
+}
+
+.galeria img{
+    
+    border-radius: 15px;
+}
+
+.galeria .col{
+    margin-bottom: 20px;
+}

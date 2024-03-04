@@ -1,0 +1,71 @@
+.menu-bar{
+    /* position: fixed; */
+    font-family: 'Arvo',sans-serif;
+    height: 70px !important;
+    width: 79rem !important;
+    background-color: #b22e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3%;
+    text-transform: uppercase;
+}
+
+
+.logo img{
+    height: 55px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.menu-bar .logo{
+    cursor: pointer;
+}
+
+.menu-bar .logo img:hover{
+    transform: scale(1.2);
+}
+
+.menu-bar .nav-links{
+    list-style: none;
+}
+
+.menu-bar .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-bar .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.menu-bar .nav-links a{
+    font-size: 15px;
+    color: #58585c;
+    text-decoration: none;
+}
+
+.menu-bar .nav-links li a:hover{
+    color: #ffbc0e
+}
+
+.menu-bar .btn-nav button{
+    /* font-weight: 600; */
+    font-size: 13px;
+    color: #075aad;
+    padding: 10px 30px;
+    margin: 50% 0;
+    /* margin-bottom: 1.25rem; */
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-bar .btn-nav button:hover{
+    background-color: #e2f1f8;
+    color: #58585c;
+    transform: scale(1.1);
+}

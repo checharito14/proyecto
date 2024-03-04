@@ -1,0 +1,101 @@
+/* Productos */
+.content-productos{
+    height: 100vh;
+    padding: 1.875rem;
+    color: #080808;
+    background-color: #fff;
+    margin: 0 2em 4em 2em;
+}
+
+.productos{
+    font-size: 3.75rem;
+}
+
+#historia{
+    font-size: 3.125rem;
+}
+
+.content-productos p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box{
+    height: 5rem;
+    margin: 2em 2em;
+    width: 20rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.banner{
+    height: 11.25rem;
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .625rem;
+    
+}
+
+.banner h3 {
+    position: absolute;
+    bottom: 0rem;
+    color: #fff;
+    font-size: 2.25rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    opacity:0;
+    transition: opacity 0.3s ease;
+}
+
+.content p{
+    font-size: .9375rem;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.box:hover .content, .box:active .content{
+    opacity: 1;
+}
+
+
+button{
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: .75rem  1.75rem;
+    border-radius: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+button:active{
+    opacity: 0.8;
+    box-shadow: .125rem .125rem .3125rem rgba(0, 0, 0, 0.5);
+}
