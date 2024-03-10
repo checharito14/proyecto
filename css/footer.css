@@ -1,13 +1,109 @@
-.footer{
-    width: 100%;
+footer{
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+}
+
+.footer-distribucion{
     background-color: #0a141d;
-}
-
-.footer .grupo1{
+    box-sizing: border-box;
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 1rem;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;   
 }
 
+.footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distribucion .footer-izquierda{
+    width: 30%;
+}
+
+.footer-izquierda h3{
+    font: normal 2.25rem cursive;
+    margin: 0;
+}
+
+.footer-izquierda h3 span{
+    color: #e0ac1c;
+}
+
+.footer-distribucion  .footer-links{
+    margin: 20px 0 12px;
+}
+
+.footer-distribucion  .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distribucion .footer-company{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distribucion .footer-centro{
+    width: 35%;
+}
+
+.footer-distribucion .footer-centro i{
+    background-color: #33383b;
+    color: #fff;
+    font-size: 20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distribucion .footer-centro p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distribucion .footer-centro a{
+    text-decoration: none; 
+}
+
+.footer-distribucion .footer-derecha{
+    width: 30%;
+}
+
+.footer-distribucion .footer-acerca-de{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    color: #92999f;
+}
+
+.footer-distribucion .footer-acerca-de span{
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 880px){
+    .footer-distribucion .footer-links, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-centro i{
+        margin-left: 0;
+    }
+}

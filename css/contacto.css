@@ -1,0 +1,45 @@
+main{
+    margin: 4em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8)), rgba(0 0 0 / .8), url(../images/pexels-tam-nguyen-3956501.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: (2,50%);
+    padding: 20px;  
+    gap: 10px;
+    width: 1000px;
+}
+
+.box-info{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-info h1{
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+
+.links i{
+    color: #000;
+    margin-right: 10px ;
+    font-size: 25px;
+}
+
+

@@ -1,34 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<footer class="footer">
+    <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.1-web/css/all.css">
+</head>
 
-    <div class="grupo1">
+<footer class="footer-distribucion">
 
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="../images/logo.rice.png" alt="">
-                </a>
-            </figure>  
-        </div>
+    <div class="footer-izquierda">
 
-        <div class="box">
-            <a href="">
-                    <img src="../images/email.png" alt="email">
-                    <p> maxi@red2000.com.mx</p>
-                </a>
-        </div>
+        <h3>Winches<span>Rice</span></h3>
 
-        <div class="box">
-            <a href=""><img src="../images/telefono.png" alt="telefono">
-            <p>+52 982 17 64</p></a>
+        <p class="footer-links">
+            <a href="#inicio">Inicio</a>
+            |
+            <a href="#historia">Historia</a>
+            |
+            <a href="../productos.php">Productos</a>
+            |
+            <a href="../galeria.php">Galeria</a>
+        </p>
 
-        </div>
+        <p class="footer-company">Copyright 2024 <strong>
+                Toleri Company</strong> Todos los derechos reservados</p>
+
     </div>
 
-    <div class="grupo2">
-        <small>&copy; 2024 <b> Toleri Company </b> - Todos los derechos reservados.</small>
+
+    <div class="footer-centro">
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Calzada Gabriel Leyva # 2116, Mazatlán Sinaloa México</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>(669) 982-17-64 , 981-33-65</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>+52 (669)227-33-53</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>maxi@red2000.com.mx</p>
+        </div>
+
     </div>
 
+    <div class="footer-derecha">
+        <p class="footer-acerca-de">
+            <span>Acerca de nosotros</span>
+            <strong>RICE</strong> le propone a usted diseños de máquinas pesqueras que pueden
+            contribuir a potenciar la producción pesquera, haciéndola mas
+            eficiente, rentable y segura para los productores pesqueros
+        </p>
+    </div>
 
 </footer>
+</body>
+
+</html>

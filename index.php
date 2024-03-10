@@ -1,8 +1,33 @@
-<?php
-require 'layout/navbar.php';
-?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <title>Winches Rice | Equipos Industriales de Mazatlan</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--<link rel="stylesheet" href="css/normalize.css"> -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+
+        <?php
+        require "layout/navbar.php";
+        ?>
     <main>
         <section id="Inicio" class="inicio-content">
             <img src="images/malacates4.gif" alt="Malacate principal">
@@ -92,15 +117,8 @@ require 'layout/navbar.php';
 
 
         </section>
-
-    </main>
-
-
-
-
-    <footer>
-
-        <div class="content-contacto">
+        
+        <section class="content-contacto">
             <h2>Contacto</h2>
             <figure class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.8692781722734!2d-106.4104046257596!3d23.211434109255972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f53a51b57fda9%3A0x9ab936aae01c7a9a!2sTaller%20Guillermo%20Rice!5e0!3m2!1ses-419!2smx!4v1707542516580!5m2!1ses-419!2smx" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -108,12 +126,16 @@ require 'layout/navbar.php';
             <p>Calzada Gabriel Leyva # 2116 Tel: (669) 982-17-64 , 981-33-65<br>
                 E-mail: Mazatlán Sinaloa México. </p>
 
-        </div>
-
-    </footer>
-
+        </section>
     
+    </main>
 
-</body>
+    <?php require "layout/footer.php" ?>
+      
+
+
+
+
+    </body>
 
 </html>
