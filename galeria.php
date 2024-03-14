@@ -23,11 +23,11 @@
 
 <body>
     <main class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col s12 center-align">
                 <h3 class="titulo">Galeria</h3>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="materialize"></div> -->
 

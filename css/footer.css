@@ -1,8 +1,11 @@
-footer{
-    position: fixed;
-    bottom: 0;
-    color: #fff;
+body{
+    position: relative;
+    padding-bottom: 25em;
+    min-height: 100vh;
+    /* border: 5px solid red; */
 }
+
+
 
 .footer-distribucion{
     background-color: #0a141d;
@@ -11,7 +14,12 @@ footer{
     text-align: center;
     font-size: 1rem;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;   
+    margin-top: 80px;  
+    /* border: 5px solid blue; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
 }
 
 .footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha{
@@ -28,10 +36,6 @@ footer{
     margin: 0;
 }
 
-.footer-izquierda h3 span{
-    color: #e0ac1c;
-}
-
 .footer-distribucion  .footer-links{
     margin: 20px 0 12px;
 }
@@ -41,6 +45,10 @@ footer{
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
+}
+
+.footer-distribucion .footer-links a:hover{
+    color: #ffbc0e;
 }
 
 .footer-distribucion .footer-company{

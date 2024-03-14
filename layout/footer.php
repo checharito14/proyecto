@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.1-web/css/all.css">
 </head>
 
 <footer class="footer-distribucion">
 
     <div class="footer-izquierda">
 
-        <h3>Winches<span>Rice</span></h3>
+        <h3>Winches Rice</h3>
 
         <p class="footer-links">
-            <a href="#inicio">Inicio</a>
+            <a href="index.php">Inicio</a>
             |
             <a href="#historia">Historia</a>
             |
-            <a href="../productos.php">Productos</a>
+            <a href="productos.php">Productos</a>
             |
-            <a href="../galeria.php">Galeria</a>
+            <a href="galeria.php">Galeria</a>
         </p>
 
         <p class="footer-company">Copyright 2024 <strong>

@@ -20,10 +20,11 @@
             <div class="box-info">
                 <h1>CONTACTATE <br>CON<br> NOSOTROS</h1>
                 <div class="links">
-                    <p><i class="fa-solid fa-location-dot"></i>Calzada Gabriel Leyva # 2116, Mazatlán Sinaloa México</p>
-                    <p><i class="fa-solid fa-phone"></i>(669) 982-17-64 , 981-33-65</p>
-                    <p><i class="fa-brands fa-whatsapp"></i>+52 (669)227-33-53</p>
-                    <p><i class="fa-solid fa-envelope"></i>maxi@red2000.com.mx</p>
+                    
+                    <p><i class="fa-solid fa-location-dot" style="color: red;"></i>Calzada Gabriel Leyva # 2116, Mazatlán Sinaloa México</p>
+                    <p><i class="fa-solid fa-phone" style="color: blue;"></i>(669) 982-17-64 , 981-33-65</p>
+                    <p><i class="fa-brands fa-whatsapp" style="color: green;"></i>+52 (669)227-33-53</p>
+                    <p><i class="fa-solid fa-envelope" style="color: black;"></i>maxi@red2000.com.mx</p>
                 </div>
             </div>
         </div>
@@ -73,9 +74,11 @@
         </form>
     </main>
 
-
     <?php require "layout/footer.php" ?>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+
+
 
 </html>

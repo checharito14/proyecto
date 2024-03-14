@@ -77,7 +77,6 @@
                             3.-Carretes de acero estructural con lubricación permanente<br>
                             4.-Sistema de embrague de fricción de acción positiva<br>
                             5.-Gira sobre rodamientos de rodillos esféricos autoalineables<br>
-
                         </p>
                         <a href="productos.php"><button>Más información</button></a>
                     </div>

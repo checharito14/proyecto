@@ -1,19 +1,23 @@
-main{
+/* body{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/5025768/pexels-photo-5025768.jpeg);
+    background-size: contain;
+} */
+main {
     margin: 4em 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8)), rgba(0 0 0 / .8), url(../images/pexels-tam-nguyen-3956501.jpg);
-    background-position: center center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/5025768/pexels-photo-5025768.jpeg); */
     background-size: cover;
 }
+
 
 .container{
     display: grid;
     grid-template-columns: (2,50%);
     padding: 20px;  
     gap: 10px;
-    width: 1000px;
+    width: 30%;
 }
 
 .box-info{
@@ -31,14 +35,14 @@ main{
 .links{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
 }
 
 
 
 .links i{
     color: #000;
-    margin-right: 10px ;
+    margin-right: 10px;
     font-size: 25px;
 }
 
