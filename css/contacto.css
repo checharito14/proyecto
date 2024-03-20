@@ -1,8 +1,16 @@
-/* body{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/5025768/pexels-photo-5025768.jpeg);
-    background-size: contain;
-} */
+.fondo {
+    
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/fondo_barcos.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://images.pexels.com/photos/623252/pexels-photo-623252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover; /* Cambiado para que la imagen se ajuste automáticamente */
+    background-repeat: no-repeat;
+    background-position: center; /* Para centrar la imagen */
+    border: 0.5px solid black;
+    height: 130vh;
+}
+
 main {
+    /* border: 3px solid blue; */
     margin: 4em 5em;
     display: flex;
     justify-content: center;
@@ -21,7 +29,7 @@ main {
 }
 
 .box-info{
-    color: #000;
+    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -41,7 +49,7 @@ main {
 
 
 .links i{
-    color: #000;
+    color: #fff;
     margin-right: 10px;
     font-size: 25px;
 }

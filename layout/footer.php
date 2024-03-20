@@ -40,7 +40,7 @@
         </div>
         <div>
             <i class="fa-solid fa-phone"></i>
-            <p>(669) 982-17-64 , 981-33-65</p>
+            <p>(669) 982-17-64 , 981-33-65 </p>
         </div>
         <div>
             <i class="fa-brands fa-whatsapp"></i>

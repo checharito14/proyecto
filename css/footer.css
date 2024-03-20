@@ -1,6 +1,7 @@
 body{
     position: relative;
-    padding-bottom: 25em;
+    /* padding-bottom: 25em; */
+    padding-bottom: 18em;
     min-height: 100vh;
     /* border: 5px solid red; */
 }
@@ -13,12 +14,11 @@ body{
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    padding: 50px 50px 60px 50px;
+    padding: 50px 20px 10px 20px;
     margin-top: 80px;  
     /* border: 5px solid blue; */
     position: absolute;
     bottom: 0;
-    width: 100%;
     color: #fff;
 }
 
@@ -28,7 +28,7 @@ body{
 }
 
 .footer-distribucion .footer-izquierda{
-    width: 30%;
+    width: 25%;
 }
 
 .footer-izquierda h3{
@@ -59,7 +59,7 @@ body{
 }
 
 .footer-distribucion .footer-centro{
-    width: 35%;
+    width: 40%;
 }
 
 .footer-distribucion .footer-centro i{
@@ -86,7 +86,7 @@ body{
 }
 
 .footer-distribucion .footer-derecha{
-    width: 30%;
+    width: 25%;
 }
 
 .footer-distribucion .footer-acerca-de{

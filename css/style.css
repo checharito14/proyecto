@@ -1,12 +1,12 @@
 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-}
+} */
 
 
 body{
@@ -15,7 +15,7 @@ body{
     background-color: #fff;
 }
 
-main, footer{
+main{
     margin: 0 2em 4em 2em;
 }
 
@@ -88,6 +88,7 @@ main, footer{
 
 /* Contacto*/
 .content-contacto{
+    margin-top: 15em;
     padding-top: 1.25rem;
     background-color: #eaeaea;
     color: #58585c;

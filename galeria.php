@@ -34,7 +34,7 @@
         <div class="row galeria">
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img1.gif" class="responsive-img materialboxed" alt="">
+                    <img src="images/Sin título.jpg" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img4.gif" class="responsive-img materialboxed" alt="">
+                    <img src="images/galeria/img2.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 

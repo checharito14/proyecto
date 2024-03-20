@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!--<link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/productos.css">
@@ -129,8 +129,7 @@
     
     </main>
 
-    <?php require "layout/footer.php" ?>
-      
+    <?php require "layout/footer.php" ?>      
 
 
 

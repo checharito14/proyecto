@@ -1,9 +1,10 @@
 .menu-bar{
     /* position: fixed; */
     font-family: 'Arvo',sans-serif;
+    background-color: #fff;
     height: 70px !important;
-    width: 79rem !important;
-    /* background-color: #e; */
+    /* width: 79rem !important; */
+    width: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
