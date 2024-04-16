@@ -78,7 +78,7 @@
                             4.-Sistema de embrague de fricción de acción positiva<br>
                             5.-Gira sobre rodamientos de rodillos esféricos autoalineables<br>
                         </p>
-                        <a href="productos.php"><button>Más información</button></a>
+                        <a href="productos.php"><button class="boton-index">Más información</button></a>
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@
                             Para circular agua en los condensadores de refrigeración
                             Para agitar la salmuera en las tinas de precongelación.
                         </p>
-                        <a href="productos.php"><button>Más información</button></a>
+                        <a href="productos.php"><button class="boton-index">Más información</button></a>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
                             Tornillería de acero de alta resistencia, sumamente fuerte y robusta.
                             Económica y eficiente
                         </p>
-                        <a href="productos.php"><button>Mas informacion</button></a>
+                        <a href="productos.php"><button class="boton-index">Mas informacion</button></a>
                     </div>
                 </div>
 

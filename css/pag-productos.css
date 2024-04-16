@@ -1,0 +1,124 @@
+ul{
+    list-style-type: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #204c6c;
+}
+
+aside{
+    padding: 2rem;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.3rem; 
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-categoria{
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.boton-categoria.active{
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.boton-categoria.active::before{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 white;
+}
+
+.boton-categoria.active::after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 white;
+}
+
+
+main{
+    background-color: white;
+    margin: 5rem 1rem 5rem 0;
+    border-radius: 2rem;
+    padding: 2rem;
+}    
+
+.titulo-principal{
+    color: black;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles{
+    background-color: #204c6c;
+    color: black;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.producto-titulo{
+    font-size: 16px;
+}
+
+.producto-mas-info{
+    border: 0;
+    font-size: .8rem;
+    background-color: #fff;
+    padding: .5rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+}
