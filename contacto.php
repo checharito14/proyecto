@@ -14,6 +14,12 @@
 
 <body>
     <?php require "layout/navbar.php" ?>
+    <?php
+// Verificar si hay un mensaje de éxito en la URL
+if(isset($_GET['mensaje']) && $_GET['mensaje'] == 'exito') {
+    echo '<p style="color: green;">Guardado con éxito!</p>';
+}
+?>
     <div class="fondo">
         <main>
 
@@ -30,18 +36,18 @@
                 </div>
             </div>
 
-            <form action="" method="post">
+            <form action="send.php" method="POST"> <!-- en action se agrega el archivo que va a guardar los datos en la bdd -->
                 <p style="color: #fff;"><small>Completa todos los campos *</small></p>
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="form-floating">
-                            <input class="form-control mb-3 form-control-lg" type="text" id="nombre" placeholder="Nombre" required>
+                            <input class="form-control mb-3 form-control-lg" type="text" name="nombre" id="nombre"  placeholder="Nombre" required>
                             <label for="nombre">Nombre</label>
 
                         </div>
 
                         <div class="form-floating">
-                            <input class="form-control {valid|invalid}-tooltip mb-3 form-control-lg" type="email" id="email" placeholder="Email" required>
+                            <input class="form-control {valid|invalid}-tooltip mb-3 form-control-lg" type="email" name= "email" id="email" placeholder="Email" required>
                             <label for="email">Email</label>
                             <div id="email" class="invalid-tooltip">
                                 Ingresa un email valido
@@ -50,23 +56,22 @@
 
 
                         <div class="form-floating">
-                            <input class="form-control mb-3 form-control-lg" type="tel" id="telefono" pattern="[0-9]{10}" placeholder="Telefono" maxlength="10" required>
+                            <input class="form-control mb-3 form-control-lg" type="tel"  name = "telefono" id="telefono" pattern="[0-9]{10}" placeholder="Telefono" maxlength="10" required>
                             <label for="telefono">Telefono</label>
                         </div>
-
                         <div class="form-floating">
-                            <input class="form-control mb-3 form-control-lg" type="text" id="pais" placeholder="Pais" required>
+                            <input class="form-control mb-3 form-control-lg" type="text" name = "pais" id="pais"  placeholder="Pais" required>
                             <label for="pais">Pais</label>
                         </div>
 
                         <div class="form-floating">
-                            <input class="form-control mb-3 form-control-lg" type="text" id="ciudad" placeholder="Ciudad" required>
+                            <input class="form-control mb-3 form-control-lg" type="text" name = "ciudad" id="ciudad"  placeholder="Ciudad" required>
                             <label for="ciudad">Ciudad</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-floating">
-                            <textarea class="form-control" id="mensaje" placeholder="comentarios" style="height: 350px"></textarea>
+                            <textarea class="form-control" name = "mensaje" id="mensaje" placeholder="comentarios" style="height: 350px"></textarea>
                             <label for="mensaje">Comentarios</label>
                         </div>
                     </div>
@@ -82,7 +87,6 @@
 
     <?php require "layout/footer.php" ?>
     <?php require "layout/whatsapp.php" ?>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
