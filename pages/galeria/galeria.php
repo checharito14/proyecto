@@ -1,5 +1,5 @@
-<?php require "layout/navbar.php" ?>
-<?php require "layout/footer.php" ?>
+<?php require "../../assets/navbar/navbar.php" ?>
+<?php require "../../assets/footer/footer.php" ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,9 +15,8 @@
 
     <!--<link rel="stylesheet" href="css/normalize.css"> -->>
 
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/galeria.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="galeria.css">
 </head>
 
 
@@ -34,7 +33,7 @@
         <div class="row galeria">
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/Sin título.jpg" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/Sin título.jpg" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -42,29 +41,21 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img2.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img2.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img3.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img3.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img6.gif" class="responsive-img materialboxed" alt="">
-                </div>
-            </div>
-
-
-
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="images/galeria/img5.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img6.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -72,7 +63,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img7.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img5.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -80,7 +71,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img8.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img7.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -88,7 +79,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img9.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img8.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -96,7 +87,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img10.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img9.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -104,7 +95,7 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img11.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img10.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -112,14 +103,22 @@
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/img12.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/img11.gif" class="responsive-img materialboxed" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria/img12.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
 
             <div class="col s12 m4 l3">
                 <div class="material-placeholder">
-                    <img src="images/galeria/bomb1.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/bomb1.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -133,7 +132,7 @@
 
             <div class="col s12 m4 l3" center-align>
                 <div class="material-placeholder">
-                    <img src="images/galeria/pol1.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/pol1.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -141,7 +140,7 @@
 
             <div class="col s12 m4 l3" center-align>
                 <div class="material-placeholder">
-                    <img src="images/galeria/pol2.gif" class="responsive-img materialboxed" alt="">
+                    <img src="../../images/galeria/pol2.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
 
@@ -152,9 +151,9 @@
     </main>
 
 
-    <script src="js/materialize.min.js"></script>
+    <script src="materialize.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="img_galeria.js"></script>
 
     
 </body>

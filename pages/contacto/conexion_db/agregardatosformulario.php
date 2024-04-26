@@ -21,4 +21,4 @@ require "conexion.php";
         // Cerrar la conexión a la base de datos
         $conn->close();
         header("Location: contacto.php?mensaje=exito");
-?>
+

@@ -17,20 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/productos.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
+    <!-- <link rel="stylesheet" href="../../assets/footer/footer.css"> -->
     
 </head>
 
         <?php
-        require "layout/navbar.php";
+        require "../../assets/navbar/navbar.php";
         ?>
     <main>
         <section id="Inicio" class="inicio-content">
-            <img src="images/malacates4.gif" alt="Malacate principal">
+            <img src="../../images/malacates4.gif" alt="Malacate principal">
             <h2 class="title">Equipos Industriales <br> de Mazatlán S.A de C.V</h2>
             <p>Sinónimo de honestidad y calidad desde 1909</p>
         </section>
@@ -45,7 +45,7 @@
                     sus dos hijos, padres de los actuales directores de los Talleres Rice, y herederos de una noble
                     tradición que suma al empeño artesanal los elementos de la tecnología más avanzada.</p>
             </div>
-            <img src="images/historia.png" alt="Historia">
+            <img src="../../images/historia.png" alt="Historia">
         </section>
 
 
@@ -67,7 +67,7 @@
                 <!--Aqui van las categorias de los productos-->
                 <div class="box">
                     <div class="banner">
-                        <img id="imagen" src="images/malacate_cate.png" alt="Malacate">
+                        <img id="imagen" src="../../images/malacate_cate.png" alt="Malacate">
                         <h3>Malacates</h3>
                     </div>
                     <div class="content">
@@ -78,13 +78,13 @@
                             4.-Sistema de embrague de fricción de acción positiva<br>
                             5.-Gira sobre rodamientos de rodillos esféricos autoalineables<br>
                         </p>
-                        <a href="productos.php"><button class="boton-index">Más información</button></a>
+                        <a href="../productos/productos.php"><button class="boton-index">Más información</button></a>
                     </div>
                 </div>
 
                 <div class="box">
                     <div class="banner">
-                        <img src="images/bomba_icono2.png" alt="Malacate">
+                        <img src="../../images/bomba_icono2.png" alt="Malacate">
                         <h3>Bombas</h3>
                     </div>
                     <div class="content">
@@ -93,14 +93,14 @@
                             Para circular agua en los condensadores de refrigeración
                             Para agitar la salmuera en las tinas de precongelación.
                         </p>
-                        <a href="productos.php"><button class="boton-index">Más información</button></a>
+                        <a href="../productos/productos.php"><button class="boton-index">Más información</button></a>
                     </div>
                 </div>
 
 
                 <div class="box">
                     <div class="banner">
-                        <img src="images/polea.gif " alt="Malacate">
+                        <img src="../../images/polea.gif " alt="Malacate">
                         <h3>Poleas</h3>
                     </div>
                     <div class="content">
@@ -110,7 +110,7 @@
                             Tornillería de acero de alta resistencia, sumamente fuerte y robusta.
                             Económica y eficiente
                         </p>
-                        <a href="productos.php"><button class="boton-index">Mas informacion</button></a>
+                        <a href="../productos/productos.php"><button class="boton-index">Mas informacion</button></a>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@
     
     </main>
 
-    <?php require "layout/footer.php" ?>      
+    <?php require "../../assets/footer/footer.php" ?>      
 
 
 

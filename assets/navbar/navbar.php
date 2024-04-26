@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/whatsapp.css">
+    <!-- <link rel="stylesheet" href="../../css/normalize.css"> -->
+    <link rel="stylesheet" href="../../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../../assets/whatsapp/whatsapp.css">
 
 
     <script>
@@ -45,21 +45,21 @@
         <div class="menu-bar">
 
             <div class="logo">
-                <a href="#"><img src="images/logo.rice.png" alt="Logo Rice"></a>
+                <a href="#"><img src="../../images/logo.rice.png" alt="Logo Rice"></a>
             </div>
 
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="index.php#historia">Historia</a></li>
-                    <li><a href="productos.php">Productos</a></li>
-                    <li><a href="galeria.php">Galeria</a></li>
+                    <li><a href="../index/index.php">Inicio</a></li>
+                    <li><a href="../index/index.php#historia">Historia</a></li>
+                    <li><a href="../productos/productos.php">Productos</a></li>
+                    <li><a href="../galeria/galeria.php">Galeria</a></li>
                 </ul>
             </nav>
-            <a href="contacto.php" class="btn-nav"><button>Contacto</button></a>
+            <a href="../contacto/contacto.php" class="btn-nav"><button>Contacto</button></a>
 
         </div>
 
     </header>
 
-    <?php require "whatsapp.php" ?>
+    <?php require "../../assets/whatsapp/whatsapp.php" ?>

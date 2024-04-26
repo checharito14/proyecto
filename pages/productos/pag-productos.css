@@ -5,7 +5,7 @@ ul{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: #204c6c;
+    background-color: #3a8ec9;
 }
 
 aside{
@@ -36,6 +36,7 @@ aside{
     cursor: pointer;
     font-weight: 600;
     padding: 1rem;
+    width: 100%;
 }
 
 .boton-categoria.active{
@@ -85,6 +86,12 @@ main{
     text-align: left;
 }
 
+.especificaciones{
+    text-align: right;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
 .contenedor-productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -97,7 +104,7 @@ main{
 }
 
 .producto-detalles{
-    background-color: #204c6c;
+    background-color: #3a8ec9;
     color: black;
     text-align: left;
     padding: 0.5rem;
