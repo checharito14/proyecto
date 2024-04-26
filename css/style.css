@@ -115,3 +115,39 @@ main{
 
     
 }
+
+/*Tabla de administrador*/
+
+/* Estilos para la tabla */
+.table-style {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+.table-style th,
+.table-style td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    font-size: 15px; /* Tamaño de texto en las celdas */
+    width: 50px; /* Ancho específico para las celdas */
+    height: 20px; /* Altura específica para las celdas */
+}
+
+/* Estilos para el encabezado de la tabla */
+.table-style th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    word-wrap: break-word;
+    
+}
+
+/* Estilos para las filas alternas de la tabla */
+.table-style tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

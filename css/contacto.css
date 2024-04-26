@@ -54,4 +54,9 @@ main {
     font-size: 25px;
 }
 
-
+.titulo {
+    color: #333;
+    font-size: 28px; 
+    margin-bottom: 20px;
+    text-align: left;
+}
