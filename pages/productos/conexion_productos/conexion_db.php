@@ -1,7 +1,7 @@
 <?php 
 class Database{
     private $hostname = "localhost";
-    private $database = "pagweb";
+    private $database = "paginaweb";
     private $username = "root";
     private $password = "flacucho14";
     private $charset = "utf8";

@@ -5,7 +5,7 @@ ul{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: #3a8ec9;
+    background-color: #094b79;
 }
 
 aside{
@@ -86,11 +86,6 @@ main{
     text-align: left;
 }
 
-.especificaciones{
-    text-align: right;
-    font-size: 1.5em;
-    text-decoration: underline;
-}
 
 .contenedor-productos{
     display: grid;
@@ -104,7 +99,7 @@ main{
 }
 
 .producto-detalles{
-    background-color: #3a8ec9;
+    background-color: #eaeaea;
     color: black;
     text-align: left;
     padding: 0.5rem;
@@ -128,4 +123,39 @@ main{
     text-transform: uppercase;
     border-radius: 1rem;
     cursor: pointer;
+}
+
+
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-modal{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Añade espacio alrededor */
+}
+
+#modal-coti{
+    min-width: 60%;
+    border-radius: 5px;    
+}
+
+form{
+    padding: 5rem;
+}
+
+
+#modal-coti::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
 }

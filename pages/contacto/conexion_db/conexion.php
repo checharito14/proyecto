@@ -1,11 +1,11 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "v10203040D:"; //Cambiar  por la contraseña de tu servidor MySQL
-$dbname = "paginaWeb";
-$port = 3306;
+$password = "flacucho14:"; //Cambiar  por la contraseña de tu servidor MySQL
+$dbname = "pagweb";
+// $port = 3306;
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión
 if ($conn->connect_error) {

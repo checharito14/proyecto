@@ -23,10 +23,11 @@
         <h2 class="titulo">Malacates</h2>
 
         <?php
-            require "conexion.php";
-        
-              $sql = "SELECT * FROM malacates";
-                $result = $conn->query($sql);
+            require "pages/productos/conexion_productos/conexion_db.php";
+            require "pages/productos/functions.php";
+            $mysqli = connect();    
+            $res = $mysqli->query("SELECT * FROM malacates");
+
 
                 echo "<table class='table-style'>";
                 echo "<tr>
@@ -37,7 +38,7 @@
                         <th>R.P.M. Carretes principales</th>
                         <th>Acciones</th> <!-- Encabezado para las acciones -->
                     </tr>";
-                while ($row = $result->fetch_assoc()) {
+                while ($row = $res->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['IdMalacates'] . "</td>";
                     echo "<td>" . $row['Modelo'] . "</td>";
@@ -61,8 +62,8 @@
         <h2 class="titulo">Bombas</h2>
         
         <?php
-        $sql = "SELECT * FROM bombas";
-                $result = $conn->query($sql);
+        $mysqli = connect();    
+        $res = $mysqli->query("SELECT * FROM bombas");
 
                 echo "<table class='table-style'>";
                 echo "<tr>
@@ -73,10 +74,10 @@
                         <th>C.P.</th>
                         <th>Acciones</th>
                     </tr>";
-                while ($row = $result->fetch_assoc()) {
+                while ($row = $res->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['idBombas'] . "</td>";
-                    echo "<td>" . $row['RPM'] . "</td>";
+                    echo "<td>" . $row['Modelo'] . "</td>";
                     echo "<td>" . $row['Carga'] . "</td>";
                     echo "<td>" . $row['Litros'] . "</td>";
                     echo "<td>" . $row['CP'] . "</td>";
@@ -92,8 +93,8 @@
 <h2 class="titulo">Poleas</h2>
         
         <?php
-        $sql = "SELECT * FROM poleas";
-                $result = $conn->query($sql);
+          $mysqli = connect();    
+          $res = $mysqli->query("SELECT * FROM poleas");
 
                 echo "<table class='table-style'>";
                 echo "<tr>
@@ -102,7 +103,7 @@
                         <th>Capacidad</th>
                         <th>Acciones</th>
                     </tr>";
-                while ($row = $result->fetch_assoc()) {
+                while ($row = $res->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['idPoleas'] . "</td>";
                     echo "<td>" . $row['Modelo'] . "</td>";
@@ -116,9 +117,7 @@
                 echo "</table>";
         ?>
 
-<?php
-$conn->close();
-?>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

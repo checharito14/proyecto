@@ -45,7 +45,7 @@
         <div class="menu-bar">
 
             <div class="logo">
-                <a href="#"><img src="../../images/logo.rice.png" alt="Logo Rice"></a>
+                <a href="../index/index.php"><img src="../../images/logo.rice.png" alt="Logo Rice"></a>
             </div>
 
             <nav>
