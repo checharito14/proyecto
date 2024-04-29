@@ -1,7 +1,8 @@
 
 <?php
 
-require "conexion.php";
+        require "pages/productos/functions.php";
+        $mysqli = connect();
 
 $tipo = $_POST['tipo'];
 
@@ -11,45 +12,45 @@ switch($tipo){
         $cccp = $_POST['cccp'];
         $numcap = $_POST['numcap'];
         $rpmcap = $_POST['rpmcap']; 
-        $sql = "INSERT INTO malacates (Modelo, CCCaP, NumCaP, RPMCaP, IdTipo) 
-        VALUES ('$modelo', '$cccp', '$numcap', '$rpmcap', '$tipo')";
-        if (mysqli_query($conn, $sql)) {
+        $res=$mysqli->query("INSERT INTO malacates (Modelo, CCCaP, NumCaP, RPMCaP, IdTipo) 
+        VALUES ('$modelo', '$cccp', '$numcap', '$rpmcap', '$tipo')");
+        if ($res) {
             echo "<script language='JavaScript'>
                             alert('El producto se agregó correctamente');
                             location.assign('registro.php');
                             </script>";
         } else {
-            echo "Error al ejecutar la consulta: " . mysqli_error($conn);
+            echo "Error al ejecutar la consulta: " . mysqli_error($conexion);
         }
         break;
     case '2':
         $modelo = $_POST['modelo'];
         $capacidad = $_POST['capacidad'];
-        $sql = "INSERT INTO poleas (Modelo, Capacidad, IdTipo) 
-        VALUES ('$modelo', '$capacidad', '$tipo')";
-        if (mysqli_query($conn, $sql)) {
+        $res=$mysqli->query("INSERT INTO poleas (Modelo, Capacidad, IdTipo) 
+        VALUES ('$modelo', '$capacidad', '$tipo')");
+        if ($res) {
             echo "<script language='JavaScript'>
                             alert('El producto se agregó correctamente');
                             location.assign('registro.php');
                             </script>";
         } else {
-            echo "Error al ejecutar la consulta: " . mysqli_error($conn);
+            echo "Error al ejecutar la consulta: " . mysqli_error($conexion);
             }
         break;
     case '3':
-        $rpm = $_POST['rpm'];
+        $rpm = $_POST['modelo'];
         $carga = $_POST['carga'];
         $litros = $_POST['litros'];
         $cp = $_POST['cp'];
-        $sql = "INSERT INTO bombas (RPM, Carga, Litros, CP, IdTipo) 
-        VALUES ('$rpm', '$carga', '$litros', '$cp', '$tipo')";
-        if (mysqli_query($conn, $sql)) {
+        $res=$mysqli->query("INSERT INTO bombas (Modelo, Carga, Litros, CP, IdTipo) 
+        VALUES ('$rpm', '$carga', '$litros', '$cp', '$tipo')");
+        if ($res) {
             echo "<script language='JavaScript'>
                             alert('El producto se agregó correctamente');
                             location.assign('registro.php');
                             </script>";
         } else {
-            echo "Error al ejecutar la consulta: " . mysqli_error($conn);
+            echo "Error al ejecutar la consulta: " . mysqli_error($conexion);
         }
         break;
 

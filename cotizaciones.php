@@ -18,13 +18,14 @@
         <h1 class="titulo">Administrar cotizaciones</h1>
         <a href="contenido_administrador.php" class="btn btn-primary" style="text-align: left; display: inline-block;">Regresar</a>
         <?php
-            require "conexion.php";
+            require "pages/productos/functions.php";
+            $mysqli = connect();
 
-            $sql = "SELECT 
+            $res=$mysqli->query("SELECT 
             CASE 
                 WHEN solicot.IdTipo = 1 THEN malacates.Modelo
                 WHEN solicot.IdTipo = 2 THEN poleas.Modelo
-                WHEN solicot.IdTipo = 3 THEN bombas.RPM
+                WHEN solicot.IdTipo = 3 THEN bombas.Modelo
                 ELSE 'Producto Desconocido' 
             END AS ProductoACotizar,
             CASE 
@@ -46,8 +47,7 @@
                 LEFT JOIN malacates ON solicot.IdProducto= malacates.IdMalacates 
                 LEFT JOIN bombas ON solicot.IdProducto = bombas.idBombas
                 LEFT JOIN poleas ON solicot.IdProducto = poleas.idPoleas
-                LEFT JOIN infocontacto ON solicot.idcontacto = infocontacto.idcontacto";
-            $result = $conn->query($sql);
+                LEFT JOIN infocontacto ON solicot.idcontacto = infocontacto.idcontacto");
 
             echo "<table class='table-style'>";
             echo "<tr>
@@ -60,7 +60,7 @@
                     <th>Estatus</th>
                     <th>Acciones</th>
                 </tr>";
-            while ($row = $result->fetch_assoc()) {
+            while ($row = $res->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $row['ProductoACotizar'] . "</td>";
                 echo "<td>" . $row['TipoProducto'] . "</td>";
