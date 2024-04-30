@@ -10,7 +10,7 @@
 
     function getAllProducts(){
         $mysqli = connect();
-        $res = $mysqli->query("SELECT Modelo FROM malacates UNION SELECT Modelo FROM poleas UNION SELECT Modelo FROM bombas");   
+        $res = $mysqli->query("SELECT Modelo, Imagen_producto FROM malacates UNION SELECT Modelo, Imagen_producto FROM poleas UNION SELECT Modelo, Imagen_producto FROM bombas;");   
         while( $row = $res->fetch_assoc() ){
             $products[] = $row;
         }
@@ -20,7 +20,7 @@
 
     function getMalacates(){
         $mysqli = connect();
-        $res = $mysqli->query("SELECT Modelo FROM malacates");
+        $res = $mysqli->query("SELECT Modelo, Imagen_producto FROM malacates");
         while( $row = $res->fetch_assoc() ){
             $products[] = $row;
         }
@@ -30,7 +30,7 @@
 
     function getPoleas(){
         $mysqli = connect();    
-        $res = $mysqli->query("SELECT Modelo FROM poleas");
+        $res = $mysqli->query("SELECT Modelo, Imagen_producto FROM poleas");
         while( $row = $res->fetch_assoc() ){
             $products[] = $row;
         }
@@ -39,7 +39,7 @@
 
     function getBombas(){
         $mysqli = connect();
-        $res = $mysqli->query("SELECT Modelo FROM bombas");
+        $res = $mysqli->query("SELECT Modelo, Imagen_producto FROM bombas");
         while( $row = $res->fetch_assoc() ){
             $products[] = $row;
         }

@@ -51,7 +51,7 @@ include "index.php";
             <div class="container-titulo">
 
                 <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
-                <button class="btn-modal" id="btn-abrir-modal">Especificaciones tecnicas</button>
+                <button class="btn-modal">Especificaciones tecnicas</button>
 
                 <dialog id="modal">
                     <img src="../../images/especificaciones/especificaciones_malacates.png" alt="Especificaciones malacates">
@@ -65,7 +65,7 @@ include "index.php";
                 foreach ($products as $product) {
                 ?>
                     <div class="producto">
-                        <img class="producto-imagen" src="../../images/winche_chiquito_correcto.jpg/winche_chiquito.jpg" alt="">
+                        <img class="producto-imagen" src="img_db/<?php echo $product["Imagen_producto"]?>" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo">Malacate: <?php echo $product["Modelo"]; ?></h3>
 

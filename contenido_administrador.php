@@ -23,7 +23,7 @@
         <h2 class="titulo">Malacates</h2>
 
         <?php
-            require "pages/productos/conexion_productos/conexion_db.php";
+           
             require "pages/productos/functions.php";
             $mysqli = connect();    
             $res = $mysqli->query("SELECT * FROM malacates");

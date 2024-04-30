@@ -1,4 +1,4 @@
-const btnAbrirModal = document.querySelectorAll("#btn-abrir-modal");
+const btnAbrirModal = document.querySelector(".btn-modal");
 const modal = document.querySelector("#modal");
 
 btnAbrirModal.addEventListener("click",()=>{

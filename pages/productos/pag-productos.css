@@ -96,6 +96,8 @@ main{
 .producto-imagen{
     max-width: 100%;
     border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .producto-detalles{
@@ -104,7 +106,9 @@ main{
     text-align: left;
     padding: 0.5rem;
     border-radius: 1rem;
-    margin-top: -2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0rem;
     position: relative;
     display: flex;
     flex-direction: column;
