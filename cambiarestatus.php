@@ -1,24 +1,22 @@
 <?php
             $id = $_GET['id'];
 
-            require "conexion.php";
+            require "pages/productos/functions.php";
+            $mysqli = connect();
         
             $error = ""; // Variable para almacenar mensajes de error
-            $sql = "SELECT Estatus FROM solicot where IdSolicitud = '$id'";
-            $resultado = $conn->query($sql);
-                $fila = $resultado->fetch_assoc();
+            $res = $mysqli->query("SELECT Estatus FROM solicot where IdSolicitud = '$id'");
+                $fila = $res->fetch_assoc();
                 $dato = $fila["Estatus"];
 
 
                 if ($dato == 0) {
-                    $sql="update solicot set Estatus='1' where IdSolicitud = '$id'";
-                        $resultado = mysqli_query($conn,$sql);
+                    $res = $mysqli->query("update solicot set Estatus='1' where IdSolicitud = '$id'");
                 }else{
-                    $sql="update solicot set Estatus='0' where IdSolicitud = '$id'";
-                        $resultado = mysqli_query($conn,$sql);
+                    $res = $mysqli->query("update solicot set Estatus='0' where IdSolicitud = '$id'");
                 }
 
-                if($resultado){
+                if($res){
                     echo "<script language='JavaScript'>
                             alert('El estatus se cambió correctamente');
                             location.assign('cotizaciones.php');

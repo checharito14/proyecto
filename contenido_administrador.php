@@ -23,7 +23,7 @@
         <h2 class="titulo">Malacates</h2>
 
         <?php
-           
+            require "pages/productos/conexion_productos/conexion_db.php";
             require "pages/productos/functions.php";
             $mysqli = connect();    
             $res = $mysqli->query("SELECT * FROM malacates");
@@ -93,8 +93,8 @@
 <h2 class="titulo">Poleas</h2>
         
         <?php
-          $mysqli = connect();    
-          $res = $mysqli->query("SELECT * FROM poleas");
+        $mysqli = connect();    
+        $res = $mysqli->query("SELECT * FROM poleas");
 
                 echo "<table class='table-style'>";
                 echo "<tr>

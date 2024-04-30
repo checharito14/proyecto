@@ -59,7 +59,7 @@
                 case "3":
                     echo '<form action="guardar.php" method="POST">';
                             echo '<label>RPM</label>';
-                            echo '<input type="text" name="rpm" value=""><br>';
+                            echo '<input type="text" name="modelo" value=""><br>';
                             echo '<label>Carga</label>';
                             echo '<input type="text" name="carga" value=""><br>';
                             echo '<label>Litros</label>';

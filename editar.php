@@ -15,10 +15,11 @@
         
 
 <?php
+            require "pages/productos/functions.php";
+            $mysqli = connect();
             $id = isset($_GET['id']) ? $_GET['id'] : '';
             $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
-            $error = ""; 
-            require "conexion.php";
+            $error = "";             
 ?>
 
             <h1 class="titulo">Editar producto</h1>
@@ -31,30 +32,29 @@
                         $cccp = $_POST['cccp'];
                         $numcap = $_POST['numcap'];
                         $rpmcap = $_POST['rpmcap'];
-        
-                        $sql="update malacates set Modelo='".$modelo."', CCCaP='".$cccp."', NumCaP='".$numcap."', RPMCaP='".$rpmcap."' where IdMalacates = $id";
-                        $resultado = mysqli_query($conn,$sql);
+                        
+                        $res=$mysqli->query("update malacates set Modelo='".$modelo."', CCCaP='".$cccp."', NumCaP='".$numcap."', RPMCaP='".$rpmcap."' where IdMalacates = $id");
+                        
                         break;
                     case '2': /*Poleas*/
                         $modelo = $_POST['modelo'];
                         $capacidad = $_POST['capacidad'];
         
-                        $sql="update poleas set Modelo='".$modelo."', Capacidad='".$capacidad."' where idPoleas = $id";
-                        $resultado = mysqli_query($conn,$sql);
+                        $res=$mysqli->query("update poleas set Modelo='".$modelo."', Capacidad='".$capacidad."'where idPoleas = $id");
+                        
                         break;
                     case '3': /*Bombas*/
-                        $rpm = $_POST['rpm'];
+                        $rpm = $_POST['modelo'];
                         $carga = $_POST['carga']; 
                         $litros = $_POST['litros'];
                         $cp = $_POST['cp'];
                         
-                        $sql="update bombas set RPM='".$rpm."', Carga='".$carga."', Litros='".$litros."', CP='".$cp."' where idBombas = $id";
-                        $resultado = mysqli_query($conn,$sql);
+                        $res=$mysqli->query("update bombas set Modelo='".$rpm."', Carga='".$carga."', Litros='".$litros."', CP='".$cp."' where idBombas = $id");
                         break;
                     }
                     
                     
-                if($resultado){
+                if($res){
                     echo "<script language='JavaScript'>
                             alert('Los datos se actualizaron correctamente');
                             location.assign('contenido_administrador.php');
@@ -70,26 +70,23 @@
             }else{
                     switch ($tipo) {
                     case '1':  /* Malacates */
-                        $sql = "SELECT * FROM malacates WHERE IdMalacates = $id";  
-                        $resultado = mysqli_query($conn,$sql);
-                        $fila = mysqli_fetch_assoc($resultado);                      
+                        $res = $mysqli->query("SELECT * FROM malacates Where IdMalacates = $id"); 
+                        $fila = mysqli_fetch_assoc($res);                      
                         $modelo = $fila['Modelo'];
                         $cccp = $fila['CCCaP'];
                         $numcap = $fila['NumCaP'];
                         $rpmcap = $fila['RPMCaP'];
                         break;
                     case '2':  /* Poleas */
-                        $sql = "SELECT * FROM poleas WHERE idPoleas = $id";
-                        $resultado = mysqli_query($conn,$sql);
-                        $fila = mysqli_fetch_assoc($resultado);
+                        $res=$mysqli->query("SELECT * FROM poleas Where idPoleas = $id");
+                        $fila = mysqli_fetch_assoc($res);
                         $modelo = $fila['Modelo'];
                         $capacidad = $fila['Capacidad'];
                         break;
                     case '3': /*Bombas*/
-                        $sql = "SELECT * FROM bombas WHERE idBombas = $id";
-                        $resultado = mysqli_query($conn,$sql);
-                        $fila = mysqli_fetch_assoc($resultado);
-                        $rpm = $fila['RPM'];
+                        $res=$mysqli->query("SELECT * FROM bombas Where idBombas = $id");
+                        $fila = mysqli_fetch_assoc($res);
+                        $rpm = $fila['Modelo'];
                         $carga = $fila['Carga'];
                         $litros = $fila['Litros'];
                         $cp = $fila['CP'];
@@ -126,7 +123,7 @@
                 case '3':  /* Bombas */
                     echo '<form action="' . $_SERVER["PHP_SELF"] . '?id=' . $id . '&tipo=' . $tipo . '" method="POST">';
                             echo '<label>RPM</label>';
-                            echo '<input type="text" name="rpm" value=" ' . $rpm . '"><br>';
+                            echo '<input type="text" name="modelo" value=" ' . $rpm . '"><br>';
                             echo '<label>Carga</label>';
                             echo '<input type="text" name="carga" value=" ' . $carga . '"><br>';
                             echo '<label>Litros</label>';
