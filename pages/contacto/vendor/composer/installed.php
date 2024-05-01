@@ -1,20 +1,20 @@
 <?php return array(
     'root' => array(
-        'name' => '__root__',
+        'name' => 'mi-proyecto/src',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '9a64f5e6761639996ddce7199dcc36cd4ef0f3d3',
-        'type' => 'library',
+        'reference' => '171ff4f37d28eb4419d073def9a5d16b8ee5bef2',
+        'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        '__root__' => array(
+        'mi-proyecto/src' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '9a64f5e6761639996ddce7199dcc36cd4ef0f3d3',
-            'type' => 'library',
+            'reference' => '171ff4f37d28eb4419d073def9a5d16b8ee5bef2',
+            'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,

@@ -1,0 +1,14 @@
+{
+    "name": "mi-proyecto/src",
+    "description": "Paginaweb de barcos",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
