@@ -24,11 +24,14 @@ if (isset($_GET['id'])) {
     }
 
     foreach ($products as $product) {
+
+
         echo '<div class="producto">';
-        echo '<img class="producto-imagen" src="../../images/winche_chiquito_correcto.jpg/winche_chiquito.jpg" alt="">';
+        echo '<img class="producto-imagen" src="img_db/' . $product["Imagen_producto"] . '" alt="">';
         echo '<div class="producto-detalles">';
         echo '<h3 class="producto-titulo"> ' . $product["Modelo"] . '</h3>';
-        echo '<button class="producto-mas-info">Solicitar cotizacion</button>';
+        echo '<button class="producto-mas-info btn-abrir-modal-coti" id="btn-abrir-modal-coti">Solicitar cotizacion</button>
+        <dialog id="modal-coti">';
         echo '</div>';
         echo '</div>';
     }
