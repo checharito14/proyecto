@@ -2,6 +2,7 @@
 <?php require "../../assets/footer/footer.php" ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
@@ -122,19 +123,49 @@
                 </div>
             </div>
 
+            <!-- <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria_nuevos/malacate_ultimo_red.gif" class="responsive-img materialboxed" alt="">
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria_nuevos/malacate.jpg" class="responsive-img materialboxed" alt="">
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria_nuevos/malacate_negro2.jpg" class="responsive-img materialboxed" alt="">
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria_nuevos/malacate_nuevo_red.jpg" class="responsive-img materialboxed" alt="">
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="../../images/galeria_nuevos/ancla.jpg" class="responsive-img materialboxed" alt="">
+                </div>
+            </div> -->
 
 
             <div class="col s12 m4 l3">
+                <div class="material-placeholder">
 
+                </div>
             </div>
-
-
 
             <div class="col s12 m4 l3" center-align>
                 <div class="material-placeholder">
                     <img src="../../images/galeria/pol1.gif" class="responsive-img materialboxed" alt="">
                 </div>
             </div>
+
 
 
 
@@ -155,7 +186,7 @@
 
     <script src="img_galeria.js"></script>
 
-    
+
 </body>
-    
+
 </html>
