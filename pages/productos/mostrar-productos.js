@@ -17,6 +17,26 @@ document.addEventListener("DOMContentLoaded", function() {
                             botonesCategorias.forEach(b => b.classList.remove("active"));
                             boton.classList.add("active");
                         }
+
+                        const btnAbrirModalCoti = document.querySelectorAll(".producto-mas-info");
+                        const modalCoti = document.querySelector("#modal-coti");
+                      
+                      
+                        btnAbrirModalCoti.forEach(btn=>{
+                          btn.addEventListener("click",()=>{
+                            modalCoti.showModal()
+                          })
+                        })
+                      
+                      
+                      
+                        window.onclick = function(event) {
+                            if (event.target == modalCoti) {
+                              modalCoti.close()
+                            }
+                          }
+                      
+                                          
                     } else {
                         console.error("Error al obtener los productos")
                     }
@@ -27,5 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
 
 

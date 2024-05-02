@@ -31,13 +31,13 @@ include "index.php";
                         <button id="todosProductos" class="boton-menu boton-categoria active">Todos los productos</button>
                     </li>
                     <li>
-                        <button id="malacates" class="boton-categoria">Malacates</button>
+                        <button id="malacates" class="boton-categoria ">Malacates</button>
                     </li>
                     <li>
-                        <button id="bombas" class="boton-categoria">Bombas</button>
+                        <button id="bombas" class="boton-categoria ">Bombas</button>
                     </li>
                     <li>
-                        <button id="poleas" class="boton-categoria">Poleas</button>
+                        <button id="poleas" class="boton-categoria ">Poleas</button>
                     </li>
                 </ul>
             </nav>
@@ -51,8 +51,8 @@ include "index.php";
             <div class="container-titulo">
 
                 <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
+                <!-- MODAL DE BOTON ESPECIFICACIONES -->
                 <button class="btn-modal">Especificaciones tecnicas</button>
-
                 <dialog id="modal">
                     <img src="../../images/especificaciones/especificaciones_malacates.png" alt="Especificaciones malacates">
                 </dialog>
@@ -153,7 +153,6 @@ include "index.php";
     </div>
 
     <script src="mostrar-productos.js"></script>
-    <!-- <script src="botones-categorias.js"></script> -->
     <script src="modal-especificaciones.js"></script>
     <script src="titulo-categorias.js"></script>
     <script src="modal-cotizaciones.js"></script>
