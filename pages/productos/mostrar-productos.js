@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     botonesCategorias.forEach(boton => {
         boton.addEventListener("click", function() {
             const id = this.id; 
-           
             const xhr = new XMLHttpRequest();
+
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
@@ -16,14 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById("contenedor-productos").innerHTML = response;
                             botonesCategorias.forEach(b => b.classList.remove("active"));
                             boton.classList.add("active");
+
+
                         }
 
                         const btnAbrirModalCoti = document.querySelectorAll(".producto-mas-info");
                         const modalCoti = document.querySelector("#modal-coti");
-                      
-                      
+                        
+                        
                         btnAbrirModalCoti.forEach(btn=>{
-                          btn.addEventListener("click",()=>{
+                            btn.addEventListener("click",()=>{
                             modalCoti.showModal()
                           })
                         })
@@ -34,9 +36,20 @@ document.addEventListener("DOMContentLoaded", function() {
                             if (event.target == modalCoti) {
                               modalCoti.close()
                             }
-                          }
-                      
-                                          
+                        }
+                    
+                        const openModalButtons = document.querySelectorAll('.btn-abrir-modal-coti');
+
+                        openModalButtons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                const productName = button.dataset.productName;
+                                const modalTitle = modalCoti.querySelector('h3');
+                                modalTitle.textContent = `Producto a cotizar: ${productName}`;
+                            });
+                        });
+                    
+
+
                     } else {
                         console.error("Error al obtener los productos")
                     }

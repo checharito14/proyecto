@@ -1,5 +1,5 @@
   const btnAbrirModalCoti = document.querySelectorAll(".producto-mas-info");
-  const modalCoti = document.querySelector("#modal-coti");
+  const modalCoti = document.getElementById('modal-coti');
 
 
   btnAbrirModalCoti.forEach(btn=>{
@@ -15,6 +15,17 @@
         modalCoti.close()
       }
     }
+
+
+    const openModalButtons = document.querySelectorAll('.btn-abrir-modal-coti');
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productName = button.dataset.productName;
+            const modalTitle = modalCoti.querySelector('h3');
+            modalTitle.textContent = `Producto a cotizar: ${productName}`;
+        });
+    });
 
 
   
