@@ -72,7 +72,7 @@
                         <th>Lts./min.</th>
                         <th>C.P.</th>
                         <th>Acciones</th>
-                    </tr>";
+                    </tr>";  
                 while ($row = $res->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['idBombas'] . "</td>";

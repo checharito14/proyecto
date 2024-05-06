@@ -65,7 +65,7 @@ include "index.php";
                 foreach ($products as $product) {
                 ?>
                     <div class="producto">
-                        <img class="producto-imagen" src="img_db/<?php echo $product["Imagen_producto"]?>" alt="">
+                        <img class="producto-imagen" src="img_db/<?php echo $product["Imagen_producto"] ?>" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo">Malacate: <?php echo $product["Modelo"]; ?></h3>
 
@@ -132,7 +132,7 @@ include "index.php";
                                             </div>
                                         </div>
                                     </div>
-                                
+
                                     <div class="d-grid gap-2 d-md-block offset-center">
                                         <button class="btn btn-success btn-lg" type="submit">Enviar</button>
                                         <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
