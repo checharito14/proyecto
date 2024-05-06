@@ -71,10 +71,10 @@ include "index.php";
 
 
                             <!-- INICIO DEL MODAL DE EL BOTON DE COTIZACION   -->
-                            <button class="producto-mas-info btn-abrir-modal-coti" id="btn-abrir-modal-coti">Solicitar cotizacion</button>
+                            <button class="producto-mas-info btn-abrir-modal-coti" id="btn-abrir-modal-coti" data-product-name="<?php echo $product['Modelo'];?>">Solicitar cotizacion</button>
                             <dialog id="modal-coti">
 
-                                <form action="send.php" method="dialog">
+                                <form action="solicot.php" method="dialog">
                                     <h3 style="text-align:center">Producto a cotizar: <?php echo $product["Modelo"] ?></h3>
                                     <p style="color: black;"><small>Completa todos los campos *</small></p>
                                     <div class="row">
@@ -134,7 +134,7 @@ include "index.php";
                                     </div>
 
                                     <div class="d-grid gap-2 d-md-block offset-center">
-                                        <button class="btn btn-success btn-lg" type="submit">Enviar</button>
+                                        <button type="submit" class="btn btn-success btn-lg" >Enviar</button>
                                         <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
                                     </div>
                                 </form>

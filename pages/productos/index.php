@@ -24,8 +24,6 @@ if (isset($_GET['id'])) {
     }
 
     foreach ($products as $product) {
-
-
         echo '<div class="producto">';
         echo '<img class="producto-imagen" src="img_db/' . $product["Imagen_producto"] . '" alt="">';
         echo '<div class="producto-detalles">';

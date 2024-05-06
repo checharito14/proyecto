@@ -1,6 +1,6 @@
 <?php
     function connect(){
-        $mysqli = new mysqli("localhost","root","flacucho14","paginaweb"); #Si note jala borra el puerto "3306"
+        $mysqli = new mysqli("localhost","root","v10203040D:","paginaweb","3306"); #Si note jala borra el puerto "3306"
         if ($mysqli->connect_errno !=0) {
             return $mysqli->connect_error;
         }else{
