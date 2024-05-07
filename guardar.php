@@ -12,7 +12,7 @@ switch($tipo){
         $cccp = $_POST['cccp'];
         $numcap = $_POST['numcap'];
         $rpmcap = $_POST['rpmcap']; 
-        $res=$mysqli->query("INSERT INTO malacates (Modelo, CCCaP, NumCaP, RPMCaP, IdTipo) 
+        $res=$mysqli->query("INSERT INTO (malacates (Modelo, CCCaP, NumCaP, RPMCaP, IdTipo) 
         VALUES ('$modelo', '$cccp', '$numcap', '$rpmcap', '$tipo')");
         if ($res) {
             echo "<script language='JavaScript'>

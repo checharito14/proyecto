@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
         <!-- INICIO DEL MODAL DE EL BOTON DE COTIZACION -->
         <button class="producto-mas-info btn-abrir-modal-coti" id="btn-abrir-modal-coti" data-product-name="' . $product['Modelo'] . '">Solicitar cotización</button>
         <dialog id="modal-coti">
-            <form action="solicot.php" method="dialog">
+            <form action="solicot.php" method="POST">
                 <h3 style="text-align:center">Producto a cotizar: ' . $product["Modelo"] . '</h3>
                 <p style="color: black;"><small>Completa todos los campos *</small></p>
                 <div class="row">

@@ -74,7 +74,7 @@ include "index.php";
                             <button class="producto-mas-info btn-abrir-modal-coti" id="btn-abrir-modal-coti" data-product-name="<?php echo $product['Modelo'];?>">Solicitar cotizacion</button>
                             <dialog id="modal-coti">
 
-                                <form action="solicot.php" method="dialog">
+                                <form action='solicot.php' method="POST">
                                     <h3 style="text-align:center">Producto a cotizar: <?php echo $product["Modelo"] ?></h3>
                                     <p style="color: black;"><small>Completa todos los campos *</small></p>
                                     <div class="row">
@@ -84,6 +84,7 @@ include "index.php";
                                                 <!-- Primer campo -->
                                                 <div class="col-12">
                                                     <div class="form-floating">
+                                                        <input type="hidden" name="modelo" id="modelo" value="<?php echo $product["Modelo"] ?>">
                                                         <input class="form-control mb-3 form-control-lg" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                                                         <label for="nombre">Nombre</label>
                                                     </div>
@@ -127,6 +128,7 @@ include "index.php";
                                                     <div class="form-floating">
                                                         <textarea class="form-control" name="mensaje" id="mensaje" placeholder="comentarios" style="height: 220px"></textarea>
                                                         <label for="mensaje">Comentarios</label>
+                                                        <input type="hidden" name=tipo value="" >
                                                     </div>
                                                 </div>
                                             </div>
