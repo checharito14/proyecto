@@ -67,7 +67,7 @@ include "index.php";
                     <div class="producto">
                         <img class="producto-imagen" src="img_db/<?php echo $product["Imagen_producto"] ?>" alt="">
                         <div class="producto-detalles">
-                            <h3 class="producto-titulo">Malacate: <?php echo $product["Modelo"]; ?></h3>
+                            <h3 class="producto-titulo">Modelo: <?php echo $product["Modelo"]; ?></h3>
 
 
                             <!-- INICIO DEL MODAL DE EL BOTON DE COTIZACION   -->
@@ -135,7 +135,7 @@ include "index.php";
 
                                     <div class="d-grid gap-2 d-md-block offset-center">
                                         <button type="submit" class="btn btn-success btn-lg" >Enviar</button>
-                                        <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
+                                        <button type="reset" class="btn btn-danger btn-lg" id="cerrar">Cancelar</button>
                                     </div>
                                 </form>
 

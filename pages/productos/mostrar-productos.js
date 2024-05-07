@@ -37,7 +37,14 @@ document.addEventListener("DOMContentLoaded", function() {
                               modalCoti.close()
                             }
                         }
-                    
+                        
+                        const cerrarModal = document.getElementById("cerrar")
+
+                        cerrarModal.onclick = function(event){
+                            modalCoti.close()
+                          }
+                          
+
                         const openModalButtons = document.querySelectorAll('.btn-abrir-modal-coti');
 
                         openModalButtons.forEach(button => {
