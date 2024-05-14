@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.rice.ico">
 </head>
         
 <body>

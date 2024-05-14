@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="css/editar.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.rice.ico">
 </head>
         
 
@@ -45,11 +46,9 @@
                         break;
                     case '3': /*Bombas*/
                         $rpm = $_POST['modelo'];
-                        $carga = $_POST['carga']; 
-                        $litros = $_POST['litros'];
-                        $cp = $_POST['cp'];
+            
                         
-                        $res=$mysqli->query("update bombas set Modelo='".$rpm."', Carga='".$carga."', Litros='".$litros."', CP='".$cp."' where idBombas = $id");
+                        $res=$mysqli->query("update bombas set Modelo='".$rpm."' where idBombas = $id");
                         break;
                     }
                     
@@ -87,9 +86,7 @@
                         $res=$mysqli->query("SELECT * FROM bombas Where idBombas = $id");
                         $fila = mysqli_fetch_assoc($res);
                         $rpm = $fila['Modelo'];
-                        $carga = $fila['Carga'];
-                        $litros = $fila['Litros'];
-                        $cp = $fila['CP'];
+                       
                         break;
                     }
             }
@@ -122,14 +119,9 @@
                             break;
                 case '3':  /* Bombas */
                     echo '<form action="' . $_SERVER["PHP_SELF"] . '?id=' . $id . '&tipo=' . $tipo . '" method="POST">';
-                            echo '<label>RPM</label>';
+                            echo '<label>Modelo</label>';
                             echo '<input type="text" name="modelo" value=" ' . $rpm . '"><br>';
-                            echo '<label>Carga</label>';
-                            echo '<input type="text" name="carga" value=" ' . $carga . '"><br>';
-                            echo '<label>Litros</label>';
-                            echo '<input type="text" name="litros" value=" ' . $litros . '"><br>';
-                            echo '<label>CP</label>';
-                            echo '<input type="text" name="cp" value=" ' . $cp . '"><br>';
+                         
                             echo '<input type="submit" name="Enviar" value="Enviar" class="boton">';
                             echo '<a href="contenido_administrador.php" class="boton-regresar">Regresar</a>';
                             echo '</form>';

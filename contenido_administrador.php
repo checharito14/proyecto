@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.rice.ico">
 </head>
         
 <body>
@@ -18,6 +19,7 @@
         <h1 class="titulo">Administrar productos</h1>
         <a href="registro.php" class="btn btn-primary" style="text-align: left; display: inline-block;">Registrar nuevo producto</a>
         <a href="cotizaciones.php" class="btn btn-primary" style="text-align: left; display: inline-block;">Administrar cotizaciones</a>
+        <a href="index.php" class="btn btn-danger" style="text-align: left; display: inline-block;">Ir a la pagina principal</a>
 
 
         <h2 class="titulo">Malacates</h2>
@@ -67,19 +69,15 @@
                 echo "<table class='table-style'>";
                 echo "<tr>
                         <th>Id</th>
-                        <th>RPM</th>
-                        <th>Carga</th>
-                        <th>Lts./min.</th>
-                        <th>C.P.</th>
+                        <th>Modelo</th>
                         <th>Acciones</th>
                     </tr>";  
                 while ($row = $res->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['idBombas'] . "</td>";
                     echo "<td>" . $row['Modelo'] . "</td>";
-                    echo "<td>" . $row['Carga'] . "</td>";
-                    echo "<td>" . $row['Litros'] . "</td>";
-                    echo "<td>" . $row['CP'] . "</td>";
+
+    
                     echo "<td>
                     <a href='eliminar.php?id=" . $row['idBombas'] . "&tipo=3' class='btn btn-danger' onclick='return confirmarEliminar();'>Eliminar</a>
                     <a href='editar.php?id=" . $row['idBombas'] . "&tipo=3' class='btn btn-warning'>Editar</a>

@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    
+    <link rel="icon" type="image/x-icon" href="../../images/logo.rice.ico">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="productos.css">
     <!-- <link rel="stylesheet" href="../../assets/footer/footer.css"> -->

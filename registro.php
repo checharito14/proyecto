@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="css/editar.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.rice.ico">
 </head>
 <body>
     <h1 class="titulo">Agregar nuevo producto</h1>
@@ -31,41 +32,43 @@
             $op = $_POST['op'];
             switch ($op) {
                 case "1":
-                    echo '<form action="guardar.php"method="POST">';
+                    echo '<form action="guardar.php"method="POST" enctype="multipart/form-data">';
                             echo '<label>Modelo</label>';
-                            echo '<input type="text" name="modelo" value=""><br>';
+                            echo '<input type="text" name="modelo" value="" required ><br>';
                             echo '<label>CCCaP</label>';
-                            echo '<input type="text" name="cccp" value=""><br>';
+                            echo '<input type="text" name="cccp" value="" required ><br>';
                             echo '<label>NumCap</label>';
-                            echo '<input type="text" name="numcap" value=""><br>';
+                            echo '<input type="text" name="numcap" value="" required><br>';
                             echo '<label>RPMCap</label>';
-                            echo '<input type="text" name="rpmcap" value=""><br>';
+                            echo '<input type="text" name="rpmcap" value="" required><br>';
+                            echo '<label for="image">Selecciona una imagen:</label><br>
+                            <input type="file" id="imagen" name="imagen" accept=".png"><br>';
                             echo '<input type="submit" name="Agregar" value="Enviar" class="boton">';
                             echo '<a href="contenido_administrador.php" class="boton-regresar">Regresar</a>';
                             echo '<input type="hidden" name=tipo value="1" >';
                             echo '</form>';
+
+                            
                     break;
                 case "2":
-                    echo '<form action="guardar.php" method="POST">';
+                    echo '<form action="guardar.php" method="POST" enctype="multipart/form-data">';
                             echo '<label>Modelo</label>';
-                            echo '<input type="text" name="modelo" value=""><br>';
+                            echo '<input type="text" name="modelo" value="" required><br>';
                             echo '<label>Capacidad</label>';
-                            echo '<input type="text" name="capacidad" value=""><br>';
+                            echo '<input type="text" name="capacidad" value="" required><br>';
+                            echo '<label for="image">Selecciona una imagen:</label><br>
+                            <input type="file" id="imagen" name="imagen" accept=".png"><br>';
                             echo '<input type="submit" name="Enviar" value="Enviar" class="boton">';
                             echo '<a href="contenido_administrador.php" class="boton-regresar">Regresar</a>';
                             echo '<input type="hidden" name=tipo value="2" >';
                             echo '</form>';
                             break;
                 case "3":
-                    echo '<form action="guardar.php" method="POST">';
-                            echo '<label>RPM</label>';
-                            echo '<input type="text" name="modelo" value=""><br>';
-                            echo '<label>Carga</label>';
-                            echo '<input type="text" name="carga" value=""><br>';
-                            echo '<label>Litros</label>';
-                            echo '<input type="text" name="litros" value=""><br>';
-                            echo '<label>CP</label>';
-                            echo '<input type="text" name="cp" value=""><br>';
+                    echo '<form action="guardar.php" method="POST" enctype="multipart/form-data">';
+                            echo '<label>Modelo</label>';
+                            echo '<input type="text" name="modelo" value="" required><br>';
+                            echo '<label for="image">Selecciona una imagen:</label><br>
+                            <input type="file" id="imagen" name="imagen" accept=".png"><br>';
                             echo '<input type="submit" name="Enviar" value="Enviar" class="boton">';
                             echo '<a href="contenido_administrador.php" class="boton-regresar">Regresar</a>';
                             echo '<input type="hidden" name=tipo value="3">';

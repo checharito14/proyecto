@@ -17,6 +17,7 @@
     <!-- <link rel="stylesheet" href="../../css/normalize.css"> -->
     <link rel="stylesheet" href="../../assets/navbar/navbar.css">
     <link rel="stylesheet" href="../../assets/whatsapp/whatsapp.css">
+    <link rel="icon" type="image/x-icon" href="../../images/logo.rice.ico">
 
 
     <script>
